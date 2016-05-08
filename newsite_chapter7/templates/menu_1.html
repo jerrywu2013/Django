@@ -19,30 +19,25 @@
 	<body>
 		<h1 class="text-center">美食菜單</h1>
 		<div class="container-fluid">
-		{% for r in restaurants %}
-		<h2>{{ r.name }}</h2>
-		{% if r.food_set.all %}
-		<p>本餐廳共有{{ r.food_set.all|length }}道菜</p>
-		<table class="table">
-			<tr>
-				<th>菜名</th>
-				<th>價格</th>
-				<th>辣不辣</th>
-				<th>註解</th>
-			</tr>
-			{% for food in r.food_set.all %}
-			<tr>
-				<td>{{ food.name }}</td>
-				<td>{{ food.price }}</td>
-				<td>{% if food.is_spicy %} 辣 {% else %} 不辣 {% endif %}</td>
-				<td>{{ food.comment }}</td>
-			</tr>
-			{% endfor %}
-		</table>
-			{% else %}
-			<p>本餐廳啥都沒賣</p>
-			{% endif %}
-			{% endfor %}
+{% for food in foods %}
+<p>本餐廳共有{{ foods|length }}道菜</p>
+<h3>第{{ forloop.counter }}道食物</h3>
+	<ul>
+		<li>食物的名字是:{{ food1.name }}}</li>
+		<li>食物的價格是:{{ food1.price }}</li>
+		<li>食物說明:{{ food1.comment }}</li>
+		<li>食物會辣? {% if food.is_spicy %} 辣 {% else %} 不辣 {% endif %}</li>
+	</ul>
+{% empty %}
+	<p>本餐廳啥都沒賣!</p>
+{% endfor %}
+
+
+
+
+{% comment %}
+註解測試
+{% endcomment %}
 
 
 
