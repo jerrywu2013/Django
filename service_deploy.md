@@ -1,4 +1,4 @@
-#Deploy Django 1.7 with Python3 on Ubuntu 14.04
+#Deploy Django 1.7 with Python3 on Azure Ubuntu 14.04
 
 ##Virtual Environment
 ###python2
@@ -60,7 +60,7 @@ sudo nano /etc/apache2/sites-available/000-default.conf
     </Files>
     </Directory>
     
-    WSGIDaemonProcess myproject python-path=/home/azureuser/myproject:/home/azureuser/myproject/myprojectenv/lib/python2$
+    WSGIDaemonProcess myproject python-path=/home/azureuser/myproject:/home/user/myproject/myprojectenv/lib/python2.7/site-packages
     WSGIProcessGroup myproject
     WSGIScriptAlias / /home/azureuser/myproject/myproject/wsgi.py
 </VirtualHost>
