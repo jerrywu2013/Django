@@ -42,8 +42,8 @@ cd mysite
 
 ##Apache
 ```
-```
 sudo nano /etc/apache2/sites-available/000-default.conf
+```
 ```
 <VirtualHost *:80>
     ServerAdmin webmaster@localhost
