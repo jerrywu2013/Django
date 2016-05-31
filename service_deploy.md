@@ -23,11 +23,11 @@ source myprojectenv/bin/activate
 
 ###Create Django Project
 ```
-django-admin.py startproject mysite
+django-admin.py startproject myproject
 ```
 ###Add a line to configure this directory.
 ```
-nano mysite/settings.py
+nano myproject/settings.py
 STATIC_ROOT = os.path.join(BASE_DIR, "static/")
 ```
 ###Complete initial project 
