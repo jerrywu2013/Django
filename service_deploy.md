@@ -41,4 +41,33 @@ cd mysite
 ```
 
 ##Apache
+```
+```
+sudo nano /etc/apache2/sites-available/000-default.conf
+```
+<VirtualHost *:80>
+    ServerAdmin webmaster@localhost
+    DocumentRoot /home/azureuser/myproject
 
+    Alias /static /home/azureuser/myproject/static
+    <Directory /home/azureuser/myproject/static>
+        Require all granted
+    </Directory>
+    
+    <Directory /home/azureuser/myproject/myproject>
+    <Files wsgi.py>
+        Require all granted
+    </Files>
+    </Directory>
+    
+    WSGIDaemonProcess myproject python-path=/home/azureuser/myproject:/home/azureuser/myproject/myprojectenv/lib/python2$
+    WSGIProcessGroup myproject
+    WSGIScriptAlias / /home/azureuser/myproject/myproject/wsgi.py
+</VirtualHost>
+```
+```
+sudo chmod 664 myproject/db.sqlite3
+sudo chown :www-data myproject/db.sqlite3
+sudo chown :www-data myproject
+sudo service apache2 restart
+```
