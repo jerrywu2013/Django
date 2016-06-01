@@ -23,6 +23,7 @@ source myprojectenv/bin/activate
 
 ###Create Django Project
 ```
+pip install "django<1.8"
 django-admin.py startproject myproject
 ```
 ###Add a line to configure this directory.
