@@ -20,6 +20,10 @@ vi etc/postgresql/9.3/main/postgresql.conf
 listen_addresses = '*'
 password_encryption = on
 ```
+```
+vi /etc/postgresql/9.3/main/pg_hba.conf
+host all all 0.0.0.0/0 password
+```
 ##Installing Django
 # djangorestframework 3.3.3
 ```
