@@ -12,7 +12,7 @@ sqlite3 database.sqlite3
 ```
 SELECT * FROM sometable;
 ```
-##SQL Convert SQLite3
+##SQL Script Convert SQLite3
 ```
 sqlite3 database.sqlite3 < db.sql
 ```
