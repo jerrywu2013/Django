@@ -28,7 +28,7 @@ host all all 0.0.0.0/0 password
 # djangorestframework 3.3.3
 ```
 sudo apt-get install python-pip
-sudo pip install django
+sudo pip install django==1.9.2
 sudo apt-get build-dep python-psycopg2
 sudo pip install psycopg2
 sudo pip install djangorestframework
