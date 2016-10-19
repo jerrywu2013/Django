@@ -4,5 +4,5 @@ INSERT INTO test(docid, subject, keyword) VALUES(1, '高雄市旗津區廟前路
 INSERT INTO test(docid, subject, keyword) VALUES(2, '國立臺灣科技大學', '國立,臺灣,科技,大學');
 INSERT INTO test(docid, subject, keyword) VALUES(3, '華創車電中心',  '華創,車電,中心,政益');
 
-SELECT * FROM mail WHERE subject MATCH '中心*';  
+SELECT * FROM test WHERE subject MATCH '中心*';  
 ```
