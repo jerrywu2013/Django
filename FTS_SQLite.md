@@ -6,3 +6,11 @@ INSERT INTO test(docid, subject, keyword) VALUES(3, '華創車電中心',  '華�
 
 SELECT * FROM test WHERE keyword MATCH '中心*';  
 ```
+```
+sqlite3 databasename.db
+sqlite> .read pschema.sql  
+sqlite> .read data.sql  
+```
+
+
+
