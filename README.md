@@ -1,7 +1,7 @@
 # About Django
 
 ### Reference
-* Django Official Documentation：https://media.readthedocs.org/pdf/django/1.10.x/django.pdf
+* Django Official Documentation：https://media.readthedocs.org/pdf/django/1.11.x/django.pdf
 * Django Girls Tutorial ：https://www.gitbook.com/book/djangogirls/djangogirls-tutorial/details
 
 ### Opening Django Environment Windows 
