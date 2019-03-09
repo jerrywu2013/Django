@@ -12,7 +12,7 @@ mkdir test
 python -m venv test_venv
 test_venv\Scripts\activate
 test_venv\Scripts\deactivate
-pip install Django==1.11
+pip install Django==2.0
 python -m django --version
 ```
 ```
